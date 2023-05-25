@@ -7,4 +7,8 @@ import sys
 print(sys.path)
 
 with open("C:\Users\Tou\Desktop\School\OOP\Python Stuff\Odd and Even\integer.txt") as int_file:
-numbers = int_file.readlines()
+    numbers = int_file.readlines()
+
+with open("C:\Users\Tou\Desktop\School\OOP\Python Stuff\Odd and Even\odd.txt") as output_odd, open("C:\Users\Tou\Desktop\School\OOP\Python Stuff\Odd and Even\even.txt") as output_even:
+    for line in numbers:
+        int_line = int(line)
