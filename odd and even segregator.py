@@ -12,3 +12,10 @@ with open("C:\Users\Tou\Desktop\School\OOP\Python Stuff\Odd and Even\integer.txt
 with open("C:\Users\Tou\Desktop\School\OOP\Python Stuff\Odd and Even\odd.txt") as output_odd, open("C:\Users\Tou\Desktop\School\OOP\Python Stuff\Odd and Even\even.txt") as output_even:
     for line in numbers:
         int_line = int(line)
+
+        #Identify whether the numbers are odd or even then put the number in their respective text files
+        if int_line %2 == 0:
+            output_even.write(str(int_line) + "\n")
+        #If remainder is not equal to zero then it writes into odd text file
+        else:
+            output_odd.write(str(int_line) + "\n")
